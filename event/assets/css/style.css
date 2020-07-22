@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  ;
+}
+.events {
+    padding: 60px 0;
+    background-color: antiquewhite;
+}
+.inner-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+span {
+    color: #f69623;
+}
+.border {
+    width: 160px;
+    height: 2px;
+    background: #302f2f;
+    margin: 40px auto;
+}
+.slick-slide img {
+    width: 100%;
+    margin: 20px auto;
+}
+.slick-slide {
+    margin: 30px 15px;
+}
+.new_events {
+    
+}
