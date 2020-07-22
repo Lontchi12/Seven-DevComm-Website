@@ -1,16 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seven DevCom</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome/all.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png" />
+
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <!-- javascrpt links -->
+    <script src="js/anime.js"></script>
+    <script src="js/hero-slider.js"></script>
+
+    <title>Seven dev-com</title>
 </head>
+
 <body>
-    
 
+    <!-- header of the page -->
+    <header>
+        <div class="container">
+            <!-- <div class="animate__animated animate__backInLeft" id="logo"> -->
+            <div id="logo">
+                <img src="assets/images/Seven Dev Community logo@2x.png" alt="">
+            </div>
+            <nav>
+                <span>
+                    <ul>
+                        <li class="animate__animated animate__bounceInDown"><a href="#">Home</a></li>
+                        <li class="animate__animated animate__bounceInDown"><a href="#">Events</a></li>
+                        <li id="projects" class="animate__animated animate__fadeInDownBig">
+                            <div><a href="#">Projects</a>
+                                <div id="list-icon"><img src="assets/images/down-chevron.svg" alt=""></div>
+                            </div>
+                            <ul class="dropdown-menu animate__animated animate__bounceInDown">
+                                <li><a href="#">Ongoing projects</a></li>
+                                <li><a href="#">Completed projects</a></li>
+                            </ul>
+                        </li>
+                        <li class="animate__animated animate__bounceInDown"><a href="#">Gallery</a></li>
+                        <li class="animate__animated animate__fadeInDownBig"><a href="#">About Us</a></li>
+                        <li class="animate__animated animate__bounceInDown"><a href="#">Contacts</a></li>
+                        <li class="animate__animated animate__fadeInDownBig"><a href="#">FAQ</a></li>
+                    </ul>
+                    <div id="header-form">
+                        <form class="animate__animated animate__bounceInDown">
+                            <input type="search" placeholder="Search ...">
+                            <button><img src="assets/images/loupe.svg" alt="loupe icon"></button>
+                        </form>
+                    </div>
+                </span>
+            </nav>
+            <div id="header-btn">
+                <!-- <button class="animate__animated animate__backInRight">Join Us</button> -->
+                <button>Join Us</button>
+            </div>
+        </div>
+    </header>
+    <section id="wrapper">
+        <div id="hero">
+            <!-- Slider -->
+            <article id="hero-slider">
+                <section class="slide">
+                    <img src="assets/img/3.jpg" >
+                    <div class="slide-content">
+                        <p class="slide-title">This is First</p>
+                    </div>
+                </section>
+        
+                <section class="slide">
+                    <img src="assets/img/3.jpg" >
+        
+                    <div class="slide-content">
+                        <p class="slide-title">This is Second</p>
+                    </div>
+                </section>
+        
+                <section class="slide">
+                    <img src="assets/img/3.jpg" >
+        
+                    <div class="slide-content">
+                        <p class="slide-title">This is Third</p>
+                    </div>
+                </section>
+        
+                <section class="slide">
+                    <img src="assets/img/3.jpg" >
+        
+                    <div class="slide-content">
+                        <p class="slide-title"> This is Fourth</p>
+                    </div>
+                </section>
+        
+                <nav class="slider-nav">
+                    <span class="prev-slide"></span>
+                    <span class="next-slide"></span>
+                </nav>
+            </article> -->
+            <!-- <Section id="hero-slider">
+                <div id="slider-container">
 
-    <script src="assets/js/script.js"></script>
+                    <div class="slide">
+                        <img src="http://res.cloudinary.com/hurricane10/image/upload/v1499778218/img-26_aw9alb.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="http://res.cloudinary.com/hurricane10/image/upload/v1499778117/img-23_pumtse.jpg">
+                    </div>
+
+                    <div class="slide">
+                        <img src="http://res.cloudinary.com/hurricane10/image/upload/v1499778109/img-20_ljchnk.jpg">
+                    </div>
+
+                </div>
+            </Section>
+        </div>
+    </section>
+
 </body>
+
 </html>

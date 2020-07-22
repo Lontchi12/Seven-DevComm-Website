@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    transition-duration: .4s;
+}
+
+/* header design**************************** */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 15vh;
+    /* background-color: #eee; */
+    /* background-color: transparent; */
+    background: linear-gradient(180deg, rgba(18, 18, 18, .8), transparent);
+    transition-duration: .4s;
+    z-index: 2;
+    /* display: none; */
+}
+header .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+header.sticky a:after {
+    top: 7.5vh
+}
+header.sticky {
+    height: 10vh;
+    transition-duration: .4s;
+    box-shadow: 0 10px 6px -6px #777;;
+    background-color: bisque;
+}
+header.sticky > .container {
+    width: 80%;
+    transition-duration: .4s;
+}
+header.sticky span {
+    height: 10vh;
+    transition-duration: .3s;
+}
+#logo {
+    width: 15%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+}
+#logo img {
+    width: 70%;
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-size: 25px;
+    color: #00ab9f;
+    text-align: center;
+    display: grid;
+    align-content: center;
+}
+header nav {
+    width: 75%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+}
+header span {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    transition-duration: .3s;
+}
+header ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+header li {
+    height: 100%;
+    list-style-type: none;
+    display: grid;
+    align-content: center;
+    margin: 0 20px;
+}
+header li div {
+    width: auto;
+    display: flex;
+}
+/* header li div a {
+} */
+#list-icon img {
+    padding-left: 5px;
+    padding-top: 3px;
+    width: 18px;
+}
+#projects:hover .dropdown-menu {
+    display: grid;
+}
+#projects .animate__bounceInDown {
+    animation-duration: 01s;
+    animation-delay: 0s;
+}
+header a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+header a:hover {
+    color: #f89623;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+header a:after {
+    content: "";
+    position: absolute;
+    top: 10vh;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -moz-transform: translateX(-50%) scaleX(0);
+    -ms-transform: translateX(-50%) scaleX(0);
+    -o-transform: translateX(-50%) scaleX(0);
+    transform-origin: 0% 0%;
+    width: 100%;
+    height: 2px;
+    background-color: #f90;
+    transition: transform 250ms;
+    -webkit-transition: transform 250ms;
+    -moz-transition: transform 250ms;
+    -ms-transition: transform 250ms;
+    -o-transition: transform 250ms;
+}
+header a:hover::after {
+    transform: translateX(-100%) scaleX(1);
+    -webkit-transform: translateX(-100%) scaleX(1);
+    -moz-transform: translateX(-100%) scaleX(1);
+    -ms-transform: translateX(-100%) scaleX(1);
+    -o-transform: translateX(-100%) scaleX(1);
+}
+.dropdown-menu {
+    position: absolute;
+    top: 10vh;
+    width: 200px;
+    height: auto;
+    background-color: #fff;
+    display: none;
+    /* box-shadow: 10px 10px 6px -6px #777; */
+}
+.dropdown-menu li {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.dropdown-menu li:hover {
+    background-color: #eee;
+}
+.dropdown-menu a {
+    color: #52898b;
+    padding: 20px 15px;
+}
+.dropdown-menu a::after {
+    display: none;
+}
+#header-form {
+    height: 100%;
+    display: grid;
+    align-content: center;
+}
+header form {
+    margin-right: 20px;
+    width: auto;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition-duration: .3s;
+}
+header form:hover {
+    background-color: #fff;
+}
+input:focus,
+header form:hover > input {
+    width: 250px;
+    padding: 11px 25px;
+    transition-duration: .3s;
+}
+header form:hover > button {
+    background-color: #fff;
+    transition-duration: .3s;
+}
+header input {
+    width: 0;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    transition-duration: .3s;
+}
+header input::placeholder {
+    font-size: 18px;
+    color: #aaa;
+}
+header form button {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition-duration: .3s;
+} 
+header form button img {
+    width: 60%;
+    margin: 0 auto;
+}
+#header-btn {
+    width: 10%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    text-align: right;
+}
+header button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #52898b;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+#wrapper {
+    /* margin-top: 15vh; */
+    width: 100vw;
+    height: auto;
+}
+#hero {
+    width: 100%;
+    height: 90vh;
+    /* background-color: #777; */
+}
+
+
+
+
+
+/* #hero-slider {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+  }
+  #slider-container {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: slider 26s infinite;
+  }
+  .slide {
+      position: relative;
+      width: 33.33333333%;
+      height: 100%;
+      float: left;
+      overflow: hidden
+  }
+  .slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  @keyframes slider {
+      0%, 25%, 100%{left: 0}
+      
+      30%, 55%{left: -100%}
+      
+      60%, 85%{left: -200%}
+  }
+   */
