@@ -1,8 +1,8 @@
 
-$(function() {
+$(()=> {
 
 	// Slider
-	$(".slider").each(function() {
+	$(".slider").each(()=> {
 		var slider = $(this),
 			slides = slider.find(".slide"),
 			totalSlides = slides.length,
@@ -57,7 +57,7 @@ $(function() {
 		}()); // end preloader
 
 		// click on next
-		$(".next-slide").on("click", function() {
+		$(".next-slide").on("click", ()=> {
 			currIndex += 1;
 
 			if (currIndex > totalSlides - 1) {
@@ -69,7 +69,7 @@ $(function() {
 		}); // end click of next
 
 		// click on prev
-		$(".prev-slide").on("click", function() {
+		$(".prev-slide").on("click",  ()=> {
 			currIndex -= 1;
 
 			if (currIndex < 0) {
